@@ -1,0 +1,490 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 40px;
+    transition: 1s;
+}
+
+.header h1{
+    color: aliceblue;
+    font-family: poppins;
+}
+
+.header h1::after{
+    content: "🎁";
+    margin-left: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:poppins;
+    margin-left: 40px;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(2, 2, 43);
+    z-index: 100;
+    padding-bottom: 5px;
+  }
+
+.A{
+    color: aliceblue;
+    font-size: 20px;
+    display: none;
+}
+
+/* Banner */
+
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./imgN/papainoelN.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+/* Decorações */
+
+.decoracoes{
+    padding: 20px 40px;
+}
+
+.decFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.conteudodec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudodec img{
+    width: 200px;
+    height: 200px;
+}
+
+.conteudodec h2{
+    color:black;
+    font-family: poppins;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Sobre */
+
+.sobre{
+    padding: 100px;
+}
+
+.sobreflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexconteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobreflex img{
+    width:450px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.sobreconteudo{
+    font-family: bodoni moda;
+    color: black;
+    margin-left: 20px;
+    background-color: rgb(231, 226, 226);
+    padding: 20px;
+}
+
+.sobreconteudo h2{
+    text-align: center;
+}
+
+.sobreconteudo p{
+    max-width: 500px;
+}
+
+.sobreconteudo button{
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: red;
+    color: aliceblue;
+    font-family: bodoni moda;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.sobreconteudo button:hover{
+    background-color: green;
+}
+
+.icons1{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.n1{
+    color: black;
+    background-color: rgb(231, 226, 226);
+    padding: 10px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.n1 h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: bodoni moda;
+}
+
+.N{
+    font-size: 30px;
+    color: red;
+    -webkit-text-stroke: 2px black;
+}
+
+/* Loja */
+
+.loja{
+    padding: 100px;
+}
+
+.lojaflex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lojaflex2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.lojaconteudo{
+    font-family: poppins;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid black;
+    padding: 40px;
+    transition: 1s;
+}
+
+.lojaconteudo:hover{
+    background-color: #587;
+}
+
+.lojaconteudo h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    letter-spacing: 3px;
+}
+
+.lojaconteudo img{
+    width: 150px;
+    height: 150px;
+}
+
+.lojaconteudo button{
+    padding: 10px;
+    font-family: dongle;
+    font-size: 25px;
+    margin-top: 15px;
+    background-color: red;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.lojaconteudo button:hover{
+    background-color: green;
+}
+
+/* Galeria */
+
+.galeria{
+    padding: 100px;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.container .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .image-container .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgb(68, 4, 4);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .image-container .image:hover img{
+    transform: scale(1.1);
+}
+
+.container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+/* Mensagem */
+
+.mensagem{
+    padding: 100px;
+    background: url(./imgN/fundoMSG.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.form1{
+    background: rgba(0,0,0,0.75);
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form1 h2{
+    color: aliceblue;
+    font-family: poppins;
+}
+
+.form1 input[type="text"],[type="email"]{
+    border: none;
+    display: block;
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    background: none;
+    border: 1px solid red;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.form1 input[type="text"],[type="email"]:focus{
+    outline: none;
+}
+
+.form1 textarea{
+    resize: none;
+    width: 180px;
+    height: 100px;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid red;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.form1 input[type="submit"]{
+    border: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 30px;
+    background: none;
+    border: 1px solid red;
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form1 input[type="submit"]:hover{
+    background-color: green;
+}
+
+.fim{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(2, 2, 43);
+    color: aliceblue;
+    font-family: poppins;
+}
+
+.fim p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fim a{
+    text-decoration: none;
+    color: red;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width:991px){
+    .A{
+        display: block;
+    }
+
+    .sobreflex img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .sobreflex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgb(2, 2, 43);
+        padding: 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .navbar ul{
+        display: block;
+    }
+
+    .nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .container .popup-image img{
+        width: 95%;
+    }
+    .galeria{
+        padding: 100px 5px;
+    }
+}
+
+@media (max-width:340px){
+    .galeria{
+        padding: 100px 5px;
+    }
+
+    .mensagem{
+        padding: 100px 5px;
+    }
+}
