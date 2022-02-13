@@ -434,6 +434,10 @@
     .A{
         display: block;
     }
+    
+     .sobre{
+        padding: 100px 40px;
+    }
 
     .sobreflex img{
         width:100%;
