@@ -63,6 +63,13 @@
 
 /* Sobre */
 
+.sobre-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
 .sobre img{
     width:20rem;
 }
@@ -172,7 +179,7 @@
     transform: translate(-50%,-50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 750px;
+    width: 350px;
     object-fit: cover;
 }
 
@@ -192,16 +199,16 @@
     border-radius:12px;
 }
 
-.mensagem .mensagem-form input{
+.mensagem .mensagem-form input, textarea{
     display:block;
     width:280px;
     padding:10px;
     margin-bottom:10px;
+    border:none;
+    border-bottom:1px solid red;
 }
 
 .mensagem .mensagem-form textarea{
-    width:280px;
-    padding:10px;
     resize:none;
 }
 
@@ -224,13 +231,14 @@
 /* Responsividade */
 
 @media (max-width:750px) {
+
     .header{
-            background:black;
-            height:100%;
-            width:100%;
-            top:-100%;
-            position:fixed;
-            transition:0.4s;
+        background:black;
+        height:100%;
+        width:100%;
+        top:-100%;
+        position:fixed;
+        transition:0.4s;
     }
 
     .header .logo{
@@ -240,9 +248,9 @@
     }
 
     .header .navbar ul{
-            display: block;
-            justify-content: center;
-            align-items: center;
+        display: block;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-bar{
@@ -252,18 +260,19 @@
         left:1rem;
         font-size:20px;
         z-index:1000;
+        color:red;
     }
 
     .active{
         top:0;
     }
 
-    .sobre .sobre-content{
-        padding:0;
-    }
-
     .sobre img{
         margin-bottom:30px;
+    }
+
+    .sobre .sobre-content{
+        padding:0!important;
     }
 }
 
@@ -284,10 +293,7 @@
         padding:10px;
     }
 
-    .mensagem .mensagem-form input{
-        width:250px;
-    }
-    .mensagem .mensagem-form textarea{
+    .mensagem .mensagem-form input, textarea{
         width:250px;
     }
 } 
