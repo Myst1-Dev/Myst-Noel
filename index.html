@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Oleo+Script+Swash+Caps&family=Poppins:wght@100;400;600&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" href="./IMG/natalicon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
@@ -39,14 +38,14 @@
     <!-- Banner -->
 
         <section class="banner d-flex justify-content-center align-items-center">
-                <h2>Feliz Natal</h2>  
-        </section>
+                <h2>Feliz Natal</h2>
+        </section> 
 
         <!-- Sobre -->
 
-        <section class="sobre container py-5 d-flex justify-content-center align-items-center wrap" id="sobre">
-            <img src="./IMG//papainoel.png" alt="papainoel" data-aos="fade-right">
-            <div class="sobre-content d-flex justify-content-center align-items-center flex-column" data-aos="fade-left">
+        <section class="sobre sobre-container container py-5" id="sobre">
+            <img src="./IMG//papainoel.png" alt="papainoel">
+            <div class="sobre-content d-flex justify-content-center align-items-center flex-column">
                 <h4>As Vendas de Natal Começaram</h4>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -60,10 +59,10 @@
 
         <!-- Loja -->
 
-        <section class="loja container py-5" id="loja">
+         <section class="loja container py-5" id="loja">
                 <h2 class="text-center title">Loja</h2>
                 <div class="border border-danger w-100 mb-5"></div>
-            <div class="d-flex justify-content-evenly align-items-center wrap" data-aos="fade-up-left">
+            <div class="d-flex justify-content-evenly align-items-center wrap">
                 <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
                     <div class="img-container">
                         <img src="./IMG/presente1.png" alt="presente1">
@@ -128,7 +127,7 @@
             <h2 class="text-center title">Galeria</h2>
             <div class="border border-danger w-100 mb-5"></div>
 
-            <div class="image-container" data-aos="fade-right">
+            <div class="image-container">
                 <div class="image"><img src="./IMG/natal.jfif" alt="galeria1"></div>
                 <div class="image"><img src="./IMG/natal2.jpg" alt="galeria2"></div>
                 <div class="image"><img src="./IMG/natal3.jpg" alt="galeria3"></div>
@@ -142,7 +141,7 @@
                 <img src="./IMG/natal.jfif" alt="popup">
             </div>
 
-        </section>
+        </section> 
 
         <!-- Mensagem -->
 
@@ -150,7 +149,7 @@
             <h2 class="text-center title">Envie uma mensagem</h2>
             <div class="border border-danger w-100 mb-5"></div>
 
-            <div class="d-flex justify-content-center align-items-center wrap" data-aos="fade-up-right">
+            <div class="d-flex justify-content-center align-items-center wrap">
                 <div class="mensagem-img">
                     <img src="./IMG/mensagem-img.png" alt="papainoel-mensagem">
                 </div>
@@ -163,7 +162,7 @@
                 </form>
             </div>
             
-        </section>
+        </section>  
 
         <!-- Fim -->
 
@@ -175,10 +174,6 @@
 
 
         <script src="script.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    
+
 </body>
 </html>
