@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./imgN/natalicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cormorant+Garamond:wght@300&family=Dongle:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Oleo+Script+Swash+Caps&family=Poppins:wght@100;400;600&family=Shojumaru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="./IMG/natalicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
     <title>Feliz Natal</title>
 </head>
 <body>
 
 
-    <!-- menu -->
+    <!-- Header -->
 
-    <header id="MyHeader" class="header">
-        <h1>Feliz Natal</h1>
+    <header id="MyHeader" class="header container-fluid w-100 d-flex justify-content-evenly align-items-center">
+        <div class="logo">
+            <h1 class="text-light">Christmas <span class="text-danger">Shop</span></h1>
+        </div>
 
         <nav class="navbar">
             <ul>
@@ -28,214 +32,153 @@
             </ul>
         </nav>
 
-        <i id="menu" class="fas fa-bars A"></i>
-
+        <i class="fa-solid fa-bars menu-bar"></i>
     </header>
 
 
     <!-- Banner -->
 
-    <section class="banner"></section>
+        <section class="banner d-flex justify-content-center align-items-center">
+                <h2>Feliz Natal</h2>  
+        </section>
 
-    <!-- Decorações -->
+        <!-- Sobre -->
 
-    <section class="decoracoes">
-
-        <div class="decFlex">
-            <div class="conteudodec">
-            <img src="./imgN/snow.png" alt="">
-            <h2>Decoração <br> de <br> Natal</h2>
-        </div>
-
-        <div class="conteudodec">
-            <img src="./imgN/rena.png" alt="">
-            <h2>Decoração <br> de <br> Natal</h2>
-        </div>
-
-        <div class="conteudodec">
-            <img src="./imgN/bola.png" alt="">
-            <h2>Decoração <br> de <br> Natal</h2>
-        </div>
-
-        <div class="conteudodec">
-            <img src="./imgN/arvore.png" alt="">
-            <h2>Decoração <br> de <br> Natal</h2>
-        </div>
-
-        <div class="conteudodec">
-            <img src="./imgN/meia.png" alt="">
-            <h2>Decoração <br> de <br> Natal</h2>
-        </div>
-
-        </div>
-
-    </section>
-
-    <!-- Sobre -->
-
-    <section class="sobre" id="sobre">
-
-        <div class="sobreflex">
-           <img src="./imgN/personoel.jpg" alt="">
-
-           <div class="flexconteudo">
-
-            <div class="sobreconteudo">
-                <h2>As Vendas de Natal Começaram</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <button>Saiba Mais</button>
+        <section class="sobre container py-5 d-flex justify-content-center align-items-center wrap" id="sobre">
+            <img src="./IMG//papainoel.png" alt="papainoel" data-aos="fade-right">
+            <div class="sobre-content d-flex justify-content-center align-items-center flex-column" data-aos="fade-left">
+                <h4>As Vendas de Natal Começaram</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button class="btn1 w-100">Saiba mais</button>
             </div>
+        </section>
 
-            <div class="icons1">
 
-                <div class="n1">
-                    <i class="fas fa-tree N"></i>
-                    <h2>Arvore de Natal</h2>
+        <!-- Loja -->
+
+        <section class="loja container py-5" id="loja">
+                <h2 class="text-center title">Loja</h2>
+                <div class="border border-danger w-100 mb-5"></div>
+            <div class="d-flex justify-content-evenly align-items-center wrap" data-aos="fade-up-left">
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente1.png" alt="presente1">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
                 </div>
 
-                <div class="n1">
-                    <i class="fas fa-cookie N"></i>
-                    <h2>Biscoito de Natal</h2>
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente2.png" alt="presente2">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
                 </div>
 
-                <div class="n1">
-                    <i class="fas fa-gifts N"></i>
-                    <h2>Presente de Natal</h2>
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente3.png" alt="presente3">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
+                </div>    
+            </div>
+
+            <div class="d-flex justify-content-evenly align-items-center wrap">
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente4.png" alt="presente4">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
                 </div>
 
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente5.png" alt="presente5">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
+                </div>
+
+                <div class="produto-container d-flex justify-content-center align-items-center flex-column mb-3">
+                    <div class="img-container">
+                        <img src="./IMG/presente6.png" alt="presente6">
+                    </div>
+                    <h2 class="h4">Especial de Natal</h2>
+                    <h5 class="text-danger">R$:75,00 <del class="text-danger">R$:150,00</del></h5>
+                    <button class="btn1">Adicionar ao carrinho</button>
+                </div>            
             </div>
+        </section>
 
-        </div>
+        <!-- Galeria -->
 
-        </div>
+        <section class="galeria container py-5" id="galeria">
+            <h2 class="text-center title">Galeria</h2>
+            <div class="border border-danger w-100 mb-5"></div>
 
-    </section>
-
-
-    <!-- Loja -->
-
-    <section class="loja" id="loja">
-
-        <div class="lojaflex">
-            <div class="lojaconteudo">
-                <img src="./imgN/presente1.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-
-            <div class="lojaconteudo">
-                <img src="./imgN/presente2.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-
-            <div class="lojaconteudo">
-                <img src="./imgN/presente3.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-            
-        </div>
-
-        <!--  -->
-
-        <div class="lojaflex2">
-            <div class="lojaconteudo">
-                <img src="./imgN/presente4.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-
-            <div class="lojaconteudo">
-                <img src="./imgN/presente5.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-
-            <div class="lojaconteudo">
-                <img src="./imgN/presente6.png" alt="">
-                <h2>Especial de Natal</h2>
-                <h3>R$:155,99 <del>R$:200,00</del> </h3>
-                <button>Adicionar ao carrinho</button>
-            </div>
-            
-        </div>
-
-    </section>
-
-
-    <!-- Galeria -->
-
-    <section class="galeria" id="galeria">
-
-        <div class="container">
-
-            <div class="image-container">
-                <div class="image"><img src="./imgN/natal.jfif" alt=""></div>
-                <div class="image"><img src="./imgN/natal2.jpg" alt=""></div>
-                <div class="image"><img src="./imgN/natal3.jpg" alt=""></div>
-                <div class="image"><img src="./imgN/natal4.jpg" alt=""></div>
-                <div class="image"><img src="./imgN/natal5.jpeg" alt=""></div>
-                <div class="image"><img src="./imgN/unnamed (2).jpg" alt=""></div>
+            <div class="image-container" data-aos="fade-right">
+                <div class="image"><img src="./IMG/natal.jfif" alt="galeria1"></div>
+                <div class="image"><img src="./IMG/natal2.jpg" alt="galeria2"></div>
+                <div class="image"><img src="./IMG/natal3.jpg" alt="galeria3"></div>
+                <div class="image"><img src="./IMG/natal4.jpg" alt="galeria4"></div>
+                <div class="image"><img src="./IMG/natal5.jpeg" alt="galeria5"></div>
+                <div class="image"><img src="./IMG/unnamed (2).jpg" alt="galeria6"></div>
             </div>
 
             <div class="popup-image">
                 <span>&times;</span>
-                <img src="./imgN/natal.jfif" alt="">
+                <img src="./IMG/natal.jfif" alt="popup">
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Mensagem -->
 
+        <section class="mensagem container py-5" id="mensagem">
+            <h2 class="text-center title">Envie uma mensagem</h2>
+            <div class="border border-danger w-100 mb-5"></div>
 
+            <div class="d-flex justify-content-center align-items-center wrap" data-aos="fade-up-right">
+                <div class="mensagem-img">
+                    <img src="./IMG/mensagem-img.png" alt="papainoel-mensagem">
+                </div>
 
-    <!-- Mensagem -->
+                <form class="mensagem-form">
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="E-mail">
+                    <textarea cols="30" rows="7" placeholder="Mensagem"></textarea>
+                    <button class="btn1 mt-2 w-100">Enviar</button>
+                </form>
+            </div>
+            
+        </section>
 
-    <section class="mensagem" id="mensagem">
+        <!-- Fim -->
 
-        <div class="contatoform">
-
-            <form class="form1">
-                <h2>Envie uma <br> Mensagem</h2>
-
-                <input type="text" placeholder="Nome">
-                <input type="Email" placeholder="E-mail">
-                <textarea placeholder="Mensagem"></textarea>
-                <input type="submit" placeholder="Enviar">
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- Fim -->
-
-
-    <footer class="fim">
-        <p>@2022 feito por <a href="https://myst1-dev1.github.io/Myst1-Dev/">Myst1 Dev</a> <br>
-              Todos os direitos reservados. </p>
-    </footer>
+        <footer class="py-2 fim d-flex justify-content-center align-items-center">
+            <p>@2022 feito por <a href="https://myst1-dev1.github.io/Myst1-Dev/">Myst1 Dev</a></p>
+        </footer>
 
 
 
 
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     
 </body>
 </html>
