@@ -243,8 +243,9 @@
 
     .header .logo{
         position:absolute;
-        top:2rem;
-        left:2rem;
+        top:103%;
+        left:5rem;
+        z-index:1000;
     }
 
     .header .navbar ul{
