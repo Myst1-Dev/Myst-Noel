@@ -276,6 +276,10 @@
         padding:0!important;
     }
     
+    .container .popup-image span{
+        top:5rem;
+    }
+    
     .container .popup-image img{
         width:350px;
     }
@@ -289,6 +293,10 @@
 
     .header .logo img{
         width:5rem;
+    }
+    
+     .container .popup-image img{
+        width:250px;
     }
 
     .mensagem .mensagem-img img{
