@@ -18,6 +18,12 @@
     transition:1s;
 }
 
+.sticky{
+    position: fixed;
+    background-color: black;
+    padding:5px 40px;
+}
+
 .header .logo{
     font-family:'Poppins'
 }
@@ -233,25 +239,31 @@
 @media (max-width:750px) {
 
     .header{
-        background:black;
-        height:100%;
-        width:100%;
-        top:-100%;
-        position:fixed;
-        transition:0.4s;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        height:100px;
     }
 
     .header .logo{
-        position:absolute;
-        top:103%;
-        left:5rem;
-        z-index:1000;
+        position:fixed;
+        top:2rem;
+        left:4rem;
     }
 
     .header .navbar ul{
-        display: block;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        justify-content:center;
+        flex-direction:column;     
+    }
+
+    .navbar{
+        background:black;
+        width:100vw;
+        position:fixed;
+        left:-500px;
+        top:120px;
+        transition:all ease 0.2s
     }
 
     .menu-bar{
@@ -261,11 +273,10 @@
         left:1rem;
         font-size:20px;
         z-index:1000;
-        color:red;
     }
 
     .active{
-        top:0;
+        left:0px;
     }
 
     .sobre img{
@@ -275,15 +286,14 @@
     .sobre .sobre-content{
         padding:0!important;
     }
-    
+
     .container .popup-image span{
         top:5rem;
     }
-    
+
     .container .popup-image img{
         width:350px;
     }
-       
 }
 
 @media (max-width:350px) {
@@ -294,8 +304,8 @@
     .header .logo img{
         width:5rem;
     }
-    
-     .container .popup-image img{
+
+    .container .popup-image img{
         width:250px;
     }
 
@@ -308,6 +318,6 @@
     }
 
     .mensagem .mensagem-form input, textarea{
-        width:250px
+        width:250px;
     }
 } 
