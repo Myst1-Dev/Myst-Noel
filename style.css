@@ -11,11 +11,12 @@
 
 .header{
     padding:10px;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     z-index:1000;
     transition:1s;
+    display:flex;
 }
 
 .sticky{
@@ -31,6 +32,7 @@
 .header .navbar ul{
     list-style:none;
     display:flex;
+    margin:auto;
 }
 
 .header .navbar ul li a{
